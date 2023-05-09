@@ -1,9 +1,9 @@
 package facade;
 
 public class Computer {
-    private CPU cpu;
-    private RAM ram;
-    private HDD hdd;
+    private final CPU cpu;
+    private final RAM ram;
+    private final HDD hdd;
 
     public Computer() {
         cpu = new CPU();
