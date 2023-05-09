@@ -2,14 +2,20 @@ package observer;
 
 public class Demo {
 	public static void main(String[] args) {
-		WeatherData weatherData = new WeatherData();
-		CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay();
-		StatisticsDisplay statisticsDisplay = new StatisticsDisplay();
+		Weather weather = new Weather();
 
-		weatherData.registerObserver(currentDisplay);
-		weatherData.registerObserver(statisticsDisplay);
+		WeatherScreen screen = new WeatherScreen();
 
-		weatherData.setMeasurements(80, 65, 30.4f);
-		weatherData.setMeasurements(82, 70, 29.2f);
+		weather.addObserver(screen);
+
+		weather.setTemperature(25);
+		weather.setTemperature(30);
+
+		weather.removeObserver(screen);
+
+		weather.setTemperature(35);
 	}
 }
+
+
+
