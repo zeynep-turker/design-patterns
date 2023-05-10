@@ -5,3 +5,7 @@ public class RAM {
         System.out.println("RAM is loaded");
     }
 }
+
+
+
+

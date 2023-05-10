@@ -6,18 +6,16 @@ public class Demo {
 		crypt.encrypt("Zeynep");
 		crypt.decrypt("Çağla");
 
-		System.out.println("-------------");
-
 		crypt = new CryptB();
 		crypt.encrypt("Zeynep");
 		crypt.decrypt("Çağla");
 
-		System.out.println("-------------");
-
 		CodeX codeX = new CodeX();
-
-		crypt = new CodeXAdapter(codeX);
+		crypt = new Adapter(codeX);
 		crypt.encrypt("Zeynep");
 		crypt.decrypt("Çağla");
 	}
 }
+
+
+

@@ -5,3 +5,8 @@ public class HDD {
         System.out.println("HDD is read");
     }
 }
+
+
+
+
+

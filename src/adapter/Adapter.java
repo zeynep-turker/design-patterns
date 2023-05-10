@@ -1,9 +1,9 @@
 package adapter;
 
-public class CodeXAdapter implements Crypt {
+public class Adapter implements Crypt {
 	private final CodeX codeX;
 
-	public CodeXAdapter(CodeX codeX){
+	public Adapter(CodeX codeX) {
 		this.codeX = codeX;
 	}
 
@@ -15,3 +15,10 @@ public class CodeXAdapter implements Crypt {
 		codeX.codeToText(text);
 	}
 }
+
+
+
+
+
+
+
