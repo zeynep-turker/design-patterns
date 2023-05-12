@@ -47,9 +47,9 @@ public class User {
 		private String phone;
 		private String address;
 
-		public UserBuilder(String firstName, String lastName) {
-			this.name = firstName;
-			this.surname = lastName;
+		public UserBuilder(String name, String surname) {
+			this.name = name;
+			this.surname = surname;
 		}
 
 		public UserBuilder age(int age) {
